@@ -11,8 +11,16 @@
 
         .content {
             display: grid;
-            grid-template-areas: 'model model info';
+            grid-template-areas: 
+                'model'
+                'info';
             column-gap: 10px;
+        }
+
+        @media screen and (min-width: 390px) {
+            .content{
+                grid-template-areas: 'model model info';
+            }
         }
 
         .title {

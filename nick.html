@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d site example</title>
+    <style>
+        .model {grid-area: model;}
+        .info {grid-area: info;}
+
+        .content {
+            display: grid;
+            grid-template-areas: 'model model info';
+            column-gap: 10px;
+        }
+
+        .title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="model">
+            <a href="./media/hillcrest.usdz" rel="ar">
+                <img src="./media/hillcrest.jpeg" alt="Brick House" height="250px">
+           </a>
+        </div>
+        <div class="info">
+            <div class="title">House on Hillcrest</div>
+            <div class="location">426 Hillcrest St. Tallahassee Fl 32308</div>
+            <div class="date">11/12/2020</div>
+        </div>
+    </div>
+</body>
+</html>
